@@ -1,0 +1,24 @@
+/* TODO: Build layout for campuses page */
+.main-content {
+  display: flex;
+}
+
+.grid {
+  padding-right: 20px;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+@media(max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
